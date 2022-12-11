@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100;200;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="css/playlist.css" />
+  <script src="css/script.js"></script>
+  <title>Playlist</title>
+</head>
+
+<body>
+  <!-- Beginning of header section -->
+  <header>
+    <!-- Beginning of the navigation bar section -->
+    <nav class="navbar">
+      <!-- Left side navbar div -->
+      <div class="navbar__left">
+        <!-- navbar logo section -->
+        <a href="/"><img class="navbar__logo" src="/assets/Spotify_logo_without_text.svg.webp" /></a>
+        <div class="navbar-heading">
+          Ninja <br />
+          Music
+        </div>
+      </div>
+      <!-- Right side navbar div -->
+      <div class="navbar__right">
+        <div class="navbar__search">
+          <input class="navbar__search-bar" type="text" placeholder="Search" />
+          <i class="fas fa-search"></i>
+        </div>
+        <i class="fas fa-bell"></i>
+        <img class="navbar__profile" src="/assets/ab6761610000e5eb989ed05e1f0570cc4726c2d3.jpeg" />
+      </div>
+    </nav>
+    <!-- End of navbar section -->
+  </header>
+  <!-- End of the navigation bar section -->
+  <!-- Beginning of main section -->
+  <main class="main">
+    <!-- Beginning of left container section -->
+    <section class="left-container">
+      <!-- Beginning of Banner section -->
+      <div class="wrapper">
+        <div class="slider">
+          <div class="slider-image">
+            <img src="/assets/ab6761610000e5eb989ed05e1f0570cc4726c2d3.jpeg" alt="" />
+          </div>
+          <div class="slide-content">
+            <h1 class="movie-title">Cold Play</h1>
+            <h4 class="movie-type">British Band</h4>
+            <p class="movie-des">
+              Coldplay is a British music band that has enjoyed continuous
+              success since their inception in 1996 through their intelligent
+              and soulful songs. The band members are Chris Martin(lead
+              vocals), Johnny Buckland (lead guitar), Guy Berryman(bass
+              guitar) and Will Champion(drums).
+            </p>
+            <div>
+              <button class="button">Play All</button>
+              <span style="font-size: 18px"> Follow </span>
+            </div>
+            <p class="movie-list">247 Tracks | 128 Albums</p>
+          </div>
+        </div>
+      </div>
+      <!-- End of Banner section -->
+      <!-- Beginning of Similar artist small screen section -->
+      <div class="similar-artists-mob">
+        <div class="similar-artists-list-mob">
+          <!-- queue item 1 -->
+          <div class="playlist-music-card-mob">
+            <div class="music-card__image">
+              <img src="/assets/paramsundari.jpeg" alt="" />
+              <i class="fas fa-play-circle music-card__icon" onclick="playMusic(0)"></i>
+              <i class="fas fa-pause-circle music-card__icon" onclick="pauseMusic(0)"></i>
+            </div>
+            <div class="music-card-details">
+              <p class="music-card-details__title">Param Sundari</p>
+              <p class="music-card-details__artist">A R Rahman</p>
+            </div>
+            <div class="music-card-options">
+              <i class="fas fa-ellipsis-h"></i>
+              <p>3:01</p>
+            </div>
+          </div>
+          <!-- queue item 2 -->
+          <div class="playlist-music-card-mob">
+            <div class="music-card__image">
+              <img src="/assets/Rangisari.jpeg" alt="" />
+              <i class="fas fa-play-circle music-card__icon" onclick="playMusic(1)"></i>
+              <i class="fas fa-pause-circle music-card__icon" onclick="pauseMusic(1)"></i>
+            </div>
+            <div class="music-card-details">
+              <p class="music-card-details__title">Rangisari</p>
+              <p class="music-card-details__artist">Kanishk Seth</p>
+            </div>
+            <div class="music-card-options">
+              <i class="fas fa-ellipsis-h"></i>
+              <p>3:22</p>
+            </div>
+          </div>
+          <!-- queue item 3 -->
+          <div class="playlist-music-card-mob">
+            <div class="music-card__image">
+              <img src="/assets/ab67616d0000b273c08202c50371e234d20caf62.jpeg" alt="" />
+              <i class="fas fa-play-circle music-card__icon" onclick="playMusic(2)"></i>
+              <i class="fas fa-pause-circle music-card__icon" onclick="pauseMusic(2)"></i>
+            </div>
+            <div class="music-card-details">
+              <p class="music-card-details__title">Kesariya</p>
+              <p class="music-card-details__artist">Pritam</p>
+            </div>
+            <div class="music-card-options">
+              <i class="fas fa-ellipsis-h"></i>
+              <p>3:23</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of Similar artist small screen section -->
+      <!-- Beginning playlist section -->
+      <div class="playlist">
+        <!-- Playlist Item 1 -->
+        <div class="playlist-item">
+          <div class="playlist-image">
+            <img src="/assets/ab67706f00000002fbeeccdab429f7c9632d7bcf.jpeg" alt="" />
+          </div>
+          <div class="playlist-desc">
+            <p class="playlist-title">Kesariya</p>
+            <p class="playlist-artist">Pritam</p>
+          </div>
+          <div class="playlist-icon">
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-plus"></i>
+          </div>
+        </div>
+        <!-- Playlist Item 2 -->
+        <div class="playlist-item">
+          <div class="playlist-image">
+            <img src="/assets/toofan.jpeg" alt="" />
+          </div>
+          <div class="playlist-desc">
+            <p class="playlist-title">Toofan</p>
+            <p class="playlist-artist">Ravi Basrur</p>
+          </div>
+          <div class="playlist-icon">
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-plus"></i>
+          </div>
+        </div>
+        <!-- Playlist Item 3 -->
+        <div class="playlist-item">
+          <div class="playlist-image">
+            <img src="/assets/paramsundari.jpeg" alt="" />
+          </div>
+          <div class="playlist-desc">
+            <p class="playlist-title">Param Sundari</p>
+            <p class="playlist-artist">A R Rahman</p>
+          </div>
+          <div class="playlist-icon">
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-plus"></i>
+          </div>
+        </div>
+        <!-- Playlist Item 4 -->
+        <div class="playlist-item">
+          <div class="playlist-image">
+            <img src="/assets/run away romeo.jpeg" alt="" />
+          </div>
+          <div class="playlist-desc">
+            <p class="playlist-title">Runaway Romeo</p>
+            <p class="playlist-artist">SKRY</p>
+          </div>
+          <div class="playlist-icon">
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-plus"></i>
+          </div>
+        </div>
+        <!-- Playlist Item 5 -->
+        <div class="playlist-item">
+          <div class="playlist-image">
+            <img src="/assets/The Dj is crying for help.jpeg" alt="" />
+          </div>
+          <div class="playlist-desc">
+            <p class="playlist-title">The DJ Is Crying For Help</p>
+            <p class="playlist-artist">AJR</p>
+          </div>
+          <div class="playlist-icon">
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-plus"></i>
+          </div>
+        </div>
+        <!-- Playlist Item 6 -->
+        <div class="playlist-item">
+          <div class="playlist-image">
+            <img src="/assets/lie to me.jpeg" alt="" />
+          </div>
+          <div class="playlist-desc">
+            <p class="playlist-title">Lie To Me</p>
+            <p class="playlist-artist">5 Seconds of Summer</p>
+          </div>
+          <div class="playlist-icon">
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-plus"></i>
+          </div>
+        </div>
+        <!-- Playlist Item 7 -->
+        <div class="playlist-item">
+          <div class="playlist-image">
+            <img src="/assets/real man.jpeg" alt="" />
+          </div>
+          <div class="playlist-desc">
+            <p class="playlist-title">Real Man</p>
+            <p class="playlist-artist">Behani ft. Ne-Yo</p>
+          </div>
+          <div class="playlist-icon">
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-plus"></i>
+          </div>
+        </div>
+        <!-- Playlist Item 8 -->
+        <div class="playlist-item">
+          <div class="playlist-image">
+            <img src="/assets/Ava.jpeg" alt="" />
+          </div>
+          <div class="playlist-desc">
+            <p class="playlist-title">AVA</p>
+            <p class="playlist-artist">Ava</p>
+          </div>
+          <div class="playlist-icon">
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-plus"></i>
+          </div>
+        </div>
+      </div>
+      <!-- End of Playlist section -->
+    </section>
+    <!-- End of left container section -->
+    <!-- Beginning of right container -->
+    <aside class="right-container">
+      <div class="similar-artists">
+        <h1>Similar Artists</h1>
+        <!-- Beginning of queue div -->
+        <div class="similar-artists-list">
+          <!-- queue item 1 -->
+          <div class="playlist-music-card">
+            <div class="music-card__image">
+              <img src="/assets/paramsundari.jpeg" alt="" />
+              <i class="fas fa-play-circle music-card__icon" onclick="playMusic(3)"></i>
+              <i class="fas fa-pause-circle music-card__icon" onclick="pauseMusic(3)"></i>
+            </div>
+            <div class="music-card-details">
+              <p class="music-card-details__title">Param Sundari</p>
+              <p class="music-card-details__artist">A R Rahman</p>
+            </div>
+            <div class="music-card-options">
+              <i class="fas fa-ellipsis-h"></i>
+              <p>3:01</p>
+            </div>
+          </div>
+          <!-- queue item 2 -->
+          <div class="playlist-music-card">
+            <div class="music-card__image">
+              <img src="/assets/Rangisari.jpeg" alt="" />
+              <i class="fas fa-play-circle music-card__icon" onclick="playMusic(4)"></i>
+              <i class="fas fa-pause-circle music-card__icon" onclick="pauseMusic(4)"></i>
+            </div>
+            <div class="music-card-details">
+              <p class="music-card-details__title">Rangisari</p>
+              <p class="music-card-details__artist">Kanishk Seth</p>
+            </div>
+            <div class="music-card-options">
+              <i class="fas fa-ellipsis-h"></i>
+              <p>3:22</p>
+            </div>
+          </div>
+          <!-- queue item 3 -->
+          <div class="playlist-music-card">
+            <div class="music-card__image">
+              <img src="/assets/ab67616d0000b273c08202c50371e234d20caf62.jpeg" alt="" />
+              <i class="fas fa-play-circle music-card__icon" onclick="playMusic(5)"></i>
+              <i class="fas fa-pause-circle music-card__icon" onclick="pauseMusic(5)"></i>
+            </div>
+            <div class="music-card-details">
+              <p class="music-card-details__title">Kesariya</p>
+              <p class="music-card-details__artist">Pritam</p>
+            </div>
+            <div class="music-card-options">
+              <i class="fas fa-ellipsis-h"></i>
+              <p>3:23</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="recently-played">
+        <div class="right-container__heading">
+          <h4>Recently Played</h4>
+        </div>
+
+        <!-- Beginning of queue div -->
+        <div class="queue">
+          <!-- queue item 1 -->
+          <div class="queue__item">
+            <div class="queue__item__image">
+              <img src="/assets/Adiye.jpeg" alt="" />
+            </div>
+            <div class="queue__item__description">
+              <p class="queue__item__description_title">Adiye</p>
+              <p class="queue__item__description_artist">Dhibu Ninan</p>
+            </div>
+            <div class="queue__item__icon">
+              <i class="fas fa-heart"></i>
+            </div>
+          </div>
+          <!-- queue item 2 -->
+          <div class="queue__item">
+            <div class="queue__item__image">
+              <img src="/assets/ponninadhi.jpeg" alt="" />
+            </div>
+            <div class="queue__item__description">
+              <p class="queue__item__description_title">Ponni Nadhi</p>
+              <p class="queue__item__description_artist">A R Rahman</p>
+            </div>
+            <div class="queue__item__icon">
+              <i class="fas fa-heart"></i>
+            </div>
+          </div>
+          <!-- queue item 3 -->
+          <div class="queue__item">
+            <div class="queue__item__image">
+              <img src="/assets/Rangisari.jpeg" alt="" />
+            </div>
+            <div class="queue__item__description">
+              <p class="queue__item__description_title">Rangisari</p>
+              <p class="queue__item__description_artist">Pritam</p>
+            </div>
+            <div class="queue__item__icon">
+              <i class="fas fa-heart"></i>
+            </div>
+          </div>
+          <!-- queue item 4 -->
+          <div class="queue__item">
+            <div class="queue__item__image">
+              <img src="/assets/paramsundari.jpeg" alt="" />
+            </div>
+            <div class="queue__item__description">
+              <p class="queue__item__description_title">Paramsundari</p>
+              <p class="queue__item__description_artist">A R Rahman</p>
+            </div>
+            <div class="queue__item__icon">
+              <i class="fas fa-heart"></i>
+            </div>
+          </div>
+          <!-- queue item 5 -->
+          <div class="queue__item">
+            <div class="queue__item__image">
+              <img src="/assets/jugnu.jpeg" alt="" />
+            </div>
+            <div class="queue__item__description">
+              <p class="queue__item__description_title">Jugnu</p>
+              <p class="queue__item__description_artist">BadShah</p>
+            </div>
+            <div class="queue__item__icon">
+              <i class="fas fa-heart"></i>
+            </div>
+          </div>
+          <!-- queue item 6 -->
+          <div class="queue__item">
+            <div class="queue__item__image">
+              <img src="/assets/ab67616d00001e0239fe640ab73db368eeac0f90.jpeg" alt="" />
+            </div>
+            <div class="queue__item__description">
+              <p class="queue__item__description_title">Vikram</p>
+              <p class="queue__item__description_artist">Anirudh</p>
+            </div>
+            <div class="queue__item__icon">
+              <i class="fas fa-heart"></i>
+            </div>
+          </div>
+          <!-- queue item 7 -->
+          <div class="queue__item">
+            <div class="queue__item__image">
+              <img src="/assets/ab67706f00000002fbeeccdab429f7c9632d7bcf.jpeg" alt="" />
+            </div>
+            <div class="queue__item__description">
+              <p class="queue__item__description_title">Kesariya</p>
+              <p class="queue__item__description_artist">Pritam</p>
+            </div>
+            <div class="queue__item__icon">
+              <i class="fas fa-heart"></i>
+            </div>
+          </div>
+          <!-- queue item 8 -->
+          <div class="queue__item">
+            <div class="queue__item__image">
+              <img src="/assets/Ava.jpeg" alt="" />
+            </div>
+            <div class="queue__item__description">
+              <p class="queue__item__description_title">AVA</p>
+              <p class="queue__item__description_artist">Ava</p>
+            </div>
+            <div class="queue__item__icon">
+              <i class="fas fa-heart"></i>
+            </div>
+          </div>
+          <!-- queue item 9 -->
+          <div class="queue__item">
+            <div class="queue__item__image">
+              <img src="/assets/toofan.jpeg" alt="" />
+            </div>
+            <div class="queue__item__description">
+              <p class="queue__item__description_title">Toofan</p>
+              <p class="queue__item__description_artist">Ravi Basrur</p>
+            </div>
+            <div class="queue__item__icon">
+              <i class="fas fa-heart"></i>
+            </div>
+          </div>
+          <!-- queue item 10 -->
+          <div class="queue__item">
+            <div class="queue__item__image">
+              <img src="/assets/ab67616d00001e02ce6a79d9bd62a43cdba025f6.jpeg" alt="" />
+            </div>
+            <div class="queue__item__description">
+              <p class="queue__item__description_title">Vaathi Coming</p>
+              <p class="queue__item__description_artist">Anirudh</p>
+            </div>
+            <div class="queue__item__icon">
+              <i class="fa fa-heart"></i>
+            </div>
+          </div>
+        </div>
+        <!-- End of queue div -->
+      </div>
+    </aside>
+    <!-- End of right container -->
+  </main>
+  <!-- End of main section -->
+  <!-- Beginning of footer section -->
+  <footer>
+    <div id="footer">
+      <!-- Beginning of footer left section -->
+      <div class="footer__left">
+        <div class="footer__left__image"></div>
+        <div class="footer__left__details">
+          <p class="footer__left__details__title">Vikram Title Track</p>
+          <p class="footer__left__details__artist">Anirudh</p>
+        </div>
+      </div>
+      <!-- End of footer left side -->
+      <!-- Beginning of footer middle section -->
+      <div class="footer__middle">
+        <div id="footer__middle__buttons">
+          <i class="fas fa-random"></i>
+          <i class="fas fa-backward"></i>
+          <i class="fas fa-play-circle" id="footer-play-icon" onclick="playMusic()"></i>
+          <i class="fas fa-pause-circle" id="footer-pause-icon" onclick="pauseMusic()"></i>
+          <i class="fas fa-forward"></i>
+          <i class="fas fa-undo-alt"></i>
+        </div>
+        <input id="progress-bar-slider" type="range" min="0" max="100" value="0" />
+        <!-- </div> -->
+      </div>
+      <!-- End of footer middle section -->
+      <!-- Beginning of footer right section -->
+      <div class="footer__right">
+        <div class="volume">
+          <i class="fas fa-volume-up"></i>
+          <input id="progress-bar-volume" type="range" min="1" max="100" value="35" />
+        </div>
+      </div>
+      <!-- End of footer right section -->
+    </div>
+    <audio id="myAudio">
+      <source src="/audio/VIKRAM Title Track.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+  </footer>
+  <!-- End of footer section -->
+</body>
+
+</html>
